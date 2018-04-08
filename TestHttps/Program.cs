@@ -10,13 +10,9 @@ namespace TestHttps
         /// 服务器端保存字符串的列表
         /// </summary>
         public static List<string> Values = new List<string>() { "value0", "value1" };
-        public static  IPAddress LocalIP;
         public static void Main(string[] args)
         {
-            string name = Dns.GetHostName();
-            LocalIP = Dns.GetHostAddresses(name)[0];
             BuildWebHost(args).Run();
-
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
