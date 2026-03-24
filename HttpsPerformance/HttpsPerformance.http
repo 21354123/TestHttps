@@ -9,3 +9,8 @@ GET {{HttpsPerformance_HostAddress}}/todos/1
 Accept: application/json
 
 ###
+
+
+
+ltt hammer --url http://localhost:6002/todos --min 1 --max 4000 --filename d:\hammer_http_4000.png
+ltt hammer --url https://localhost:6001/todos --min 1 --max 4000 --filename d:\hammer_https_4000.png
