@@ -1,0 +1,11 @@
+@HttpsPerformance_HostAddress = http://localhost:5234
+
+GET {{HttpsPerformance_HostAddress}}/todos/
+Accept: application/json
+
+###
+
+GET {{HttpsPerformance_HostAddress}}/todos/1
+Accept: application/json
+
+###
